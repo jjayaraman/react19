@@ -4,6 +4,7 @@ It is built using Vite and includes ESLint for code quality.
 The project is structured with a host and a remote microfrontend.
 
 The remote microfrontend is a simple React application that uses TypeScript and Vite.
+
 The host microfrontend is a simple React application that uses TypeScript and Vite.
 
 ---
@@ -12,8 +13,10 @@ Steps:
 
 1. remote
 
+```
 npm create vite@latest remote
 npm i -D @originjs/vite-plugin-federation@latest
+```
 
 Update remote/vite.config.ts
 
@@ -39,10 +42,18 @@ export default defineConfig({
 })
 ```
 
+Run the remote with command
+
+```
+npm run build && npm run preview
+```
+
 2. host
 
+```
 npm create vite@latest host
 npm i -D @originjs/vite-plugin-federation@latest
+```
 
 Update host/vite.config.ts as below
 
@@ -65,4 +76,10 @@ export default defineConfig({
     cssCodeSplit: false,
   },
 })
+```
+
+Run the host with command
+
+```
+npm run build && npm run preview
 ```
