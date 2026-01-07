@@ -1,5 +1,4 @@
-This is a simple microfrontend project that uses React, TypeScript and Vite.
-It is built using Vite and includes ESLint for code quality.
+This is a simple microfrontend project that uses React, TypeScript and Vite. It is built using Vite 
 
 The project is structured with a host and a remote microfrontend.
 
